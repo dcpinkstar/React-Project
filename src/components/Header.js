@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { 
-    Navbar, 
+import {
+    Navbar,
     NavbarBrand,
     Collapse,
     NavbarToggler,
-    Nav, 
-    NavItem,
+    Nav,
+    NavItem
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import NucampLogo from '../app/assets/img/logo.png';
@@ -19,7 +19,8 @@ const Header = () => {
                 <img src={NucampLogo} alt='nucamp logo' className='float-start' />
                 <h1 className='mt-1'>NuCamp</h1>
             </NavbarBrand>
-            <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
+            
+            <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className='ms-auto' navbar>
                     <NavItem>
