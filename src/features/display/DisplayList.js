@@ -5,7 +5,7 @@ import { selectFeaturedPromotion } from '../promotions/promotionsSlice';
 import { selectFeaturedPartner } from '../partnersSlice';
 
 const DisplayList = () => {
-    const items = [selectFeaturedCampsite(), selectFeaturedPromotion(), selectFeaturedPartner];
+    const items = [selectFeaturedCampsite(), selectFeaturedPromotion(), selectFeaturedPartner()];
 
     return (
         <Row>
